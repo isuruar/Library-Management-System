@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lowa State University</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/icon-white.png">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Noto+Sans+TC:wght@500&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    
+    <div class="jumbotron text-center margin-none">
+        <div class="layer"></div>
+        <div class="jumbotron-ontop">
+            <img class="logo-icon" src="images/icon-white.png">
+            <h1>Lowa State University</h1>
+            <p>Online Library</p>
+        </div>
+    </div>
+
+    <nav id="navbar" class="navbar navbar-default">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li class="active"><a href="librarian.html">Librarian</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="profile.html">Isuru Asiri
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <img class="profile-picture"
+                    src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" />
+            </div>
+            <div class="col-md-10 profile-information">
+                <label class="profile-name">Isuru Asiri Ranaweera</label>
+                <label>Student</label>
+                <label>isuruar@gmail.com</label>
+                <label>Male</label>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs" style="margin-bottom: 10px;">
+                    <li class="active"><a data-toggle="tab" href="#reservedbooks">Reserved Books</a></li>
+                    <li><a data-toggle="tab" href="#overduebooks">Overdue Books</a></li>
+                    <li><a data-toggle="tab" href="#editprofile">Edit Profile</a></li>
+                    <li><a data-toggle="tab" href="#updatepassword">Change Password</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="reservedbooks" class="tab-pane fade in active">
+                        <div class="col-md-12">
+                            <h3 class="heading">Reserved Books</h3>
+                            <p>All books that have exceeded 24 hours of reservation will be applicable for a fine (if
+                                necessary).</p>
+                        </div>
+                    </div>
+                    <div id="overduebooks" class="tab-pane fade">
+                        <div class="col-md-12">
+                            <h3 class="heading">Overdue Books</h3>
+                            <p>All books that have exceeded 24 hours of reservation will be applicable for a fine (if
+                                necessary).</p>
+                        </div>
+                    </div>
+                    <div id="editprofile" class="tab-pane fade">
+                        <div class="col-md-12">
+                            <h3 class="heading">Edit Profile</h3>
+                            <p>Press the update button once you have filled the details.</p>
+
+                            <form>
+                                <div class="form-row">
+                                    <div class="col form-group padding-none col-md-5">
+                                        <label>First Name:</label>
+                                        <input type="text" class="form-control" placeholder="First Name">
+                                    </div>
+                                    <div class="col form-group padding-none col-md-1">
+                                    </div>
+                                    <div class="col form-group padding-none col-md-6">
+                                        <label>Last Name:</label>
+                                        <input type="text" class="form-control" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email Address:</label>
+                                    <input type="email" class="form-control" placeholder="Email Address">
+                                    <small class="form-text text-muted">We'll never share your email with anyone
+                                        else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label>Gender:</label>
+                                    <label class="form-check form-check-inline" style="margin-right: 8px;">
+                                        <input class="form-check-input" type="radio" name="gender" value="optMale">
+                                        <span class="form-check-label"> Male </span>
+                                    </label>
+                                    <label class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" value="optFemale">
+                                        <span class="form-check-label"> Female</span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label>Category:</label>
+                                    <label class="form-check form-check-inline" style="margin-right: 8px;">
+                                        <input class="form-check-input" type="radio" name="category" value="optStudent">
+                                        <span class="form-check-label"> Student </span>
+                                    </label>
+                                    <label class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="category"
+                                            value="optProfessor">
+                                        <span class="form-check-label"> Professor</span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block"> Update Information
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="updatepassword" class="tab-pane fade">
+                        <div class="col-md-12">
+                            <h3 class="heading">Change Password</h3>
+                            <p>Press the update button once you have filled the details.</p>
+
+                            <form>
+                                <div class="form-group">
+                                    <label>Current Password:</label>
+                                    <input class="form-control" type="password" placeholder="Current Password">
+                                </div>
+                                <div class="form-group">
+                                    <label>New Password:</label>
+                                    <input class="form-control" type="password" placeholder="New Password">
+                                </div>
+                                <div class="form-group">
+                                    <label>Confirm Password:</label>
+                                    <input class="form-control" type="password" placeholder="Confirm Password">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block"> Change Password </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container ">
+            <div class="footer-logo">
+                <img src="images/logo.jpeg">
+            </div>
+            <div class="footer-content">
+                <p><b>Address:</b> LOWA State University, Ames, IA 50011, United States</p>
+                <p><b>Phone:</b>+1 515-294-4111</p>
+                <a href="mailto:info@lowastateuniversity.com">info@lowastateuniversity.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="row ">
+        <div class="footer-copyrights ">© Copyrights 2020. LOWA State University All Rights Reserved</div>
+    </div>
+
+    <script>
+        //Sticky Navbar Script
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        window.onload = function () {
+            //Reference the DropDownList.
+            var ddlYears = document.getElementById("drYears");
+
+            //Determine the Current Year.
+            var currentYear = (new Date()).getFullYear();
+
+            //Loop and add the Year values to DropDownList.
+            for (var i = currentYear; i >= 1850; i--) {
+                var option = document.createElement("OPTION");
+                option.innerHTML = i;
+                option.value = i;
+                ddlYears.appendChild(option);
+            }
+        };
+    </script>
+
+</body>
+
+</html>
