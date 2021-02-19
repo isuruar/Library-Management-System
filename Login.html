@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lowa State University</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/icon-white.png">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Noto+Sans+TC:wght@500&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron text-center margin-none">
+        <div class="layer"></div>
+        <div class="jumbotron-ontop">
+            <img class="logo-icon" src="images/icon-white.png">
+            <h1>Login to Lowa State University</h1>
+            <p>Online Library Management System</p>
+
+            <div class="login-wrap">
+                <form action="">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-default">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <nav id="navbar" class="navbar navbar-default margin-none">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="librarian.html">Librarian</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+                <li class="active"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        //Sticky Navbar Script
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
