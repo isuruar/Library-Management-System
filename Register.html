@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lowa State University</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/icon-white.png">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Noto+Sans+TC:wght@500&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron text-center margin-none">
+        <div class="layer"></div>
+        <div class="jumbotron-ontop">
+            <img class="logo-icon" src="images/icon-white.png">
+            <h1>Register with Lowa State University</h1>
+            <p>Online Library Management System</p>
+
+            <div class="register-wrap">
+                <form>
+                    <div class="form-row">
+                        <div class="col form-group padding-none col-md-5">
+                            <label>First Name:</label>
+                            <input type="text" class="form-control" placeholder="First Name">
+                        </div>
+                        <div class="col form-group padding-none col-md-1">
+                        </div>
+                        <div class="col form-group padding-none col-md-6">
+                            <label>Last Name:</label>
+                            <input type="text" class="form-control" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address:</label>
+                        <input type="email" class="form-control" placeholder="Email Address">
+                        <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <div class="register-option">
+                            <label>Gender:</label>
+                            <label class="form-check form-check-inline" style="margin-right: 8px;">
+                                <input class="form-check-input" type="radio" name="gender" value="optMale">
+                                <span class="form-check-label"> Male </span>
+                            </label>
+                            <label class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" value="optFemale">
+                                <span class="form-check-label"> Female</span>
+                            </label>
+                        </div>
+                        <div class="register-option">
+                            <label>Category:</label>
+                            <label class="form-check form-check-inline" style="margin-right: 8px;">
+                                <input class="form-check-input" type="radio" name="category" value="optStudent">
+                                <span class="form-check-label"> Student </span>
+                            </label>
+                            <label class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="category" value="optProfessor">
+                                <span class="form-check-label"> Professor</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Password:</label>
+                        <input class="form-control" type="password" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm Password:</label>
+                        <input class="form-control" type="password" placeholder="Confirm Password">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block"> Register </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <nav id="navbar" class="navbar navbar-default margin-none">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="librarian.html">Librarian</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="register.html"><span class="glyphicon glyphicon-user"></span> Register</a>
+                </li>
+                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        //Sticky Navbar Script
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
