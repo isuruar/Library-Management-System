@@ -1,4 +1,4 @@
-# Library-System
+# Library Management System
 
 Hi everyone!
 
